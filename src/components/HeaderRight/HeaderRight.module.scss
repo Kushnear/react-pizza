@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.headerRight {
+    display: flex;
+    gap: 13px;
+    background: $orange;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 23px;
+    font-weight: 700;
+    font-size: 16px;
+    // line-height: 19px;
+
+color: #FFFFFF;
+
+    .delimiter {
+        width: 1px;
+        height: 25px;
+        background: rgba(255, 255, 255, 0.25);
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+}

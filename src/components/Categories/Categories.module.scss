@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+.categories {
+    display: flex;
+    gap: 0.5625em;
+
+    .item {
+        background: $snow;
+        border-radius: 30px;
+        padding: 0.5625em 1.75em;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .active {
+        background-color: $black;
+        color: $white;
+    }
+
+    @media (max-width: $breakpoint-laptop) {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 0.5625em;
+    }
+}

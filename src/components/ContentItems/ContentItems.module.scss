@@ -1,0 +1,34 @@
+@import '../../styles/variables.scss';
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 2.1875em;
+}
+
+.contentItems {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 65px;
+
+    @media (max-width: $breakpoint-desktop) {
+        grid-template-columns: repeat(3, 280px);
+        // grid-column-gap: auto;
+        justify-content: space-around;
+        // background-color: red;
+        // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+
+    @media (max-width: $breakpoint-tablet-large) {
+      grid-template-columns: repeat(2, 280px);
+      justify-content: space-around;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-around;
+    }
+
+}

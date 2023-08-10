@@ -1,0 +1,147 @@
+@import '../../styles/variables.scss';
+
+.pizzaCard {
+    // width: 280px;
+    // height: 459px;
+    // background-color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .img {
+        max-width: 100%;
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        .title {
+            font-weight: 800;
+            font-size: 20px;
+            align-self: center;
+        }
+
+        // .selector {
+        //     display: grid;
+        //     grid-gap: 50px;
+        //     // grid-template-rows: 1fr;
+        //     // grid-template-columns: 1fr 1fr 1fr;
+        //     grid-template-areas: 
+        //     "dough dough" 
+        //     "size size size";
+        //     // flex-direction: column;
+            // background: $whiteSmoke;
+            // padding: 0.49em 0.42em;
+            // border-radius: 10px;
+            // font-weight: 700;
+            // font-size: 14px;
+            // color: $black;
+            // text-align: center;
+
+            // li {
+            //     padding-top: 0.75em;
+            //     padding-bottom: 0.75em;
+            // }
+
+        //     .dough {
+        //         grid-area: dough;
+        //         // display: grid;
+        //         // grid-template-columns: repeat(2, 1fr);
+        //         // grid-column-gap: 0.42em;
+        //     }
+
+        //     .size {
+        //         grid-area: size;
+        //         // display: grid;
+        //         // grid-template-columns: repeat(3, 1fr);
+        //         // grid-column-gap: 0.42em;
+        //     }
+        // }
+
+        .selector {
+            display: flex;
+            row-gap: 0.49em;
+            flex-direction: column;
+            background: $whiteSmoke;
+            padding: 0.49em 0.42em;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            color: $veryLightGrey;
+
+            .available {
+                background-color: $whiteSmoke;
+                color: $black;
+            }
+
+            li {
+                padding-top: 0.75em;
+                padding-bottom: 0.75em;
+                cursor: pointer;
+            }
+
+            .doughSelector {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 0.42em;
+            }
+            .sizeSelector {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 0.42em;
+            }
+            .dough {
+                
+            }
+            .size {
+                
+            }
+
+            .active {
+                background: $white;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+                border-radius: 5px;
+            }
+        }
+        
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .price {
+            font-weight: 700;
+            font-size: 22px;
+            color: $black;
+        }
+
+        .addBtn {
+            padding: 9px 14px;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 16px;
+            gap: 8px;
+            background: $white;
+            border: 1px solid $orange;
+            border-radius: 30px;
+            color: $orange;
+            cursor: pointer;
+    
+            .counter {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $orange;
+                border-radius: 50%;
+                height: 22px;
+                width: 22px;
+                color: $white;
+                font-size: 13px;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.topContent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    @media (max-width: $breakpoint-laptop) {
+        
+      }
+}
